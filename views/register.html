@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre|Registro</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap' rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <div class="combo-search">
+    
+            <div class="logo-search">
+            <div><a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></a></div>
+            
+            <div class="search">
+                <input type="text" placeholder="Buscar productos, marcas" class="input"><i class="fas fa-search"></i></div>
+            
+            </div>
+            <h3 class="compra"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjetas de crédito</h3>
+            </div>
+            
+            <nav class="nav-enlaces">
+                <ul>
+                    <li><a href="#"> Ofertas </a></li>
+                    <li><a href="#"> Tiendas Oficiales </a></li>
+                    <li><a href="#"> Vender </a></li>
+                    <li><a href="#"> Ayuda </a></li>
+                </ul>
+    
+                <ul>
+                    <li><a href="/register"> Creá tu cuenta  </a><i id="iconitos" class="fas fa-address-card"></i></li>
+                    <li><a href="/login"> Ingresá  </a><i id="iconitos" class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#"> Mis compras  </a><i id="iconitos" class="fas fa-shopping-cart"></i></li>
+                </ul>
+    
+            </nav>
+            <a href="#" class="menu"><i class="fas fa-bars"></i></a>
+    </header>
+    <img class="banner" src="/images/img-home-banner.jpg" alt="banner">
+        <!--Formulario de registro-->
+        <h1 class="bienvenido">Bienvenid@</h1>
+    <form action="" method="post" class="formulario"> 
+        <div class="nombre">
+            <label class="nom-la">Nombre y Apellido</label>
+            <input type="text" name="nombre y apellido" placeholder="Nombre y apellido" required>
+        </div>
+        <div class="usuario">
+            <label class="usu-la">Nombre de Usuario</label>
+            <input type="text" name="nombre de usuario" placeholder="Nombre de usuario" required>
+        </div>
+        <div class="fecha">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="Fecha de nacimiento" required>
+        </div>
+        <div class="domicilio">
+            <label class="domi-la">Domicilio</label>
+            <input type="text" name="Domicilio" placeholder="Domicilio">
+        </div>
+        <div class="perfil">
+            <h3 class="perfil-titulo">Perfil del usuario</h3>
+            <br>
+            <label class="perf">Comprador</label>
+            <input type="radio" name="perfil" value="Comprar">
+            <br>
+            <label class="perf">Vendedor</label>
+            <input type="radio" name="perfil" value="Vender">
+        </div>
+        <div class="categorias">
+            <h3 class="nombre-categoria">Intereses</h3>
+            <label>Electro</label>
+            <input type="checkbox" name="interes" value="Electro">
+            <br>
+            <label>Moda</label>
+            <input type="checkbox" name="interes" value="Moda">
+            <br>
+            <label>Hogar</label>
+            <input type="checkbox" name="interes" value="Hogar">
+            <br>
+            <label>Juguetería</label>
+            <input type="checkbox" name="interes" value="Jugueteria">
+            <br>
+            <label>Vida sana</label>
+            <input type="checkbox" name="interes" value="Vida sana">
+        </div>
+        <br>
+        <div class="foto">
+            <label>Foto de usuario</label>
+            <input type="file" name="Foto" accept=".jpg, .png">
+        </div>
+        <div class="control">
+            <label>Contarseña</label>
+            <input type="password" name="congtraseña" required>
+        </div>
+        <div class="control">
+            <label>Confirmar contarseña</label>
+            <input type="password" name="confirmar congtraseña" required>
+        </div>
+        <div class="botones">
+            <button type="reset">Borrar</button>
+            <button href="/">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
+
+

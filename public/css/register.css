@@ -1,0 +1,449 @@
+/*header*/
+header {
+    background-color:  #EAC926;
+    background-size: cover;
+    padding: 20px;
+}
+
+#iconitos {
+    color:  #03264C;
+}
+.logo {
+    width: 60%;
+}
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input {
+    display: flex;
+    border: none;
+    width: 90%;  
+}
+.compra {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner {
+    display: none;
+}
+.menu {
+    display: block;
+    background-color: #03264C;
+    color: white;
+    padding: 5px 0;
+    width: 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.nav-enlaces {
+    display: none;
+}
+.search {
+    display: flex;
+    padding: 10px 5px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/*formulario de registro*/
+body {
+    font-family:'Roboto', sans-serif;
+    font-size:12px;
+    background-color: #ebebeb ;
+}
+.bienvenido {
+    text-align: center;
+    color: #03264C;
+    font-weight: bold;
+}
+.formulario {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+.nombre {
+    padding: 10px;
+    margin: 10px 0;
+}
+.nom-la, .usu-la, .domi-la {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: none;
+}
+.nombre input {
+    border: none;
+    padding: 10px 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+.usuario {
+    padding: 10px;
+    margin: 10px 0;
+}
+.usuario input {
+    border: none;
+    padding: 10px 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+.domicilio {
+    padding: 10px;
+    margin: 10px 0;
+}
+.domicilio input {
+    border: none;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 30px;
+}
+.fecha {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.fecha label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+.fecha input {
+    width: 50%;
+    text-align: center;
+    margin-left: 80px;
+    border: none;
+    border-radius: 30px;
+    color: grey;
+    padding: 5px 10px;
+}
+.perfil {
+    margin-bottom: 10px;
+}
+.perfil-titulo {
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #03264C;
+}
+.nombre-categoria {
+    color: #03264C;
+}
+.categorias {
+    width: 40%;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.categorias label {
+    font-size: 14px;
+}
+.categorias input {
+    margin-bottom: 10px;
+}
+.foto {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.foto label {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+.foto input {
+    margin: 10px;
+    padding: 5px;
+}
+.control {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.control label {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
+.control input {
+    width: 50%;
+    margin-left: 80px;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 30px;
+}
+.botones {
+    padding: 10px;
+    margin:auto;
+}
+.botones button {
+    width: 15%;
+    border: none;
+    background-color: #03264C;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.botones button a {
+    text-decoration: none;
+    background-color: #03264C;
+    color: white;
+    font-size: bold;
+    border-radius: 30px;
+    width: 15%;
+}
+@media (min-width: 768px){
+    /*header*/
+    .nav-enlaces {
+        display: flex; 
+        font-size: 18px; 
+        margin: 0;
+        justify-content: space-between;
+    }
+    .nav-enlaces a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 0 6px;
+    }
+    ul {
+        font-weight: bold;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    .menu {
+        display: none;
+    }
+    /*Estilo registro*/
+    .nom-la, .usu-la, .domi-la, .fecha label, .perfil-titulo, .nombre-categoria{
+        display: block;
+        font-size: 18px;
+        padding: 10px;
+        text-align: start;
+        color: #03264C;
+    }
+    .nombre input, .usuario input, .fecha input, .domicilio input {
+        display: block;
+        width: 90%;
+        text-align: start;
+    }
+    .nombre input::placeholder, .usuario input::placeholder, .domicilio input::placeholder {
+        opacity:0;
+    }
+    .fecha input {
+        display: block;
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .categorias, .perfil {
+        display: block;
+        text-align: start;
+    }
+    .perfil-titulo {
+        text-align: start;
+        margin: 0;
+    }
+    .perfil label{
+        width: 20%;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .perfil input {
+        margin: auto;
+        font-size: 16px;
+    }
+    .categorias label {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .foto {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 0;
+    }
+    .foto label {
+        font-size: 18px;
+    }
+    .foto input {
+        width: 50%;
+        background-color: rgb(161, 157, 157);
+        border-radius: 30px;
+        color: #03264C;
+    }
+    .control label, .botones{
+        text-align: start;
+        font-size: 18px;
+    }
+    .control input {
+        text-align: start;
+        margin: 0;
+        width: 50%
+    }
+    .botones button {
+        width: 25%;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+}
+@media (min-width: 1024px){
+    /*header*/
+    .banner {
+        display: block;
+        width: 100%;
+    }
+    .combo-search {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo-search {
+        width: 60%;
+    }
+    .search {
+        font-size: 24px;
+    }
+    .search input {
+        font-size: 24px;
+        text-align: center;
+    }
+    .compra {
+        font-size: 24px;
+    }
+    .nav-enlaces {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .nav-enlaces ul li{
+        margin-right: 20px;
+    }
+    .nav-enlaces ul li:hover {
+        text-shadow: 2px 2px 2px white;
+        transition: all 400ms;
+    }
+    .search:hover {
+        box-shadow: 2px 2px 3px #464343;
+        transition: all 425ms;
+    }
+    .menu {
+        display: none;
+    }
+    /*Estilo registro*/
+    .bienvenido {
+        font-size: 70px;
+        text-shadow: 2px 2px 4px  #03264C;
+    }
+    .formulario {
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 70px;
+    }
+    .nom-la, .usu-la, .domi-la, .fecha label, .perfil-titulo, .nombre-categoria{
+        display: block;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    .nombre input, .usuario input, .fecha input, .domicilio input {
+        display: block;
+        width: 60%;
+        text-align: center;
+        background-color: #ebebeb;
+        margin: auto;
+        padding: 20px;
+    }
+    .nombre input:hover, .usuario input:hover, .fecha input:hover, .domicilio input:hover {
+        box-shadow: 1px 1px 2px  #03264C;
+    }
+    .nombre input::placeholder, .usuario input::placeholder, .domicilio input::placeholder {
+        opacity:0;
+    }
+    .categorias, .perfil {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .perfil-titulo {
+        text-align: center;
+        margin: 0;
+    }
+    .perfil label{
+        width: 20%;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .perfil input {
+        margin: auto;
+        font-size: 24px;
+    }
+    .categorias label {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .foto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .foto label {
+        font-size: 30px;
+    }
+    .foto input {
+        width: 50%;
+        background-color: #ebebeb;
+        border-radius: 30px;
+        padding: 12px;
+        margin: auto;
+        font-size: 24px;
+    }
+    .control label, .botones{
+        text-align: center;
+        font-size: 30px;
+    }
+    .control input {
+        text-align: center;
+        background-color: #ebebeb;
+        margin: 0;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+    }
+    .foto input:hover, .control input:hover {
+        box-shadow: 1px 1px 2px  #03264C;
+    }
+    .botones {
+        margin-top: 60px;
+    }
+    .botones button {
+        width: 25%;
+        padding: 20px 10px;
+        font-size: 30px;
+    }
+    .botones button:hover {
+        background-color:  #EAC926;
+        transition: all 425ms;
+    }
+}

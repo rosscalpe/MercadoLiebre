@@ -1,0 +1,233 @@
+/*header*/
+header {
+    background-color:  #EAC926;
+    background-size: cover;
+    padding: 20px;
+}
+body {
+    font-family:'Roboto', sans-serif;
+    font-size:12px;
+    background-color: #ebebeb ;
+}
+#iconitos {
+    color:  #03264C;
+}
+.logo {
+    width: 60%;
+}
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input {
+    display: flex;
+    border: none;
+    width: 90%;  
+}
+.compra {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner {
+    display: none;
+}
+.menu {
+    display: block;
+    background-color: #03264C;
+    color: white;
+    padding: 5px 0;
+    width: 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.nav-enlaces {
+    display: none;
+}
+.search {
+    display: flex;
+    padding: 10px 5px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/*Estilo login*/
+.completar {
+    color: #03264C;
+    font-weight: bold;
+    text-align: center;
+}
+.login-complete {
+   background-color: white;
+   box-shadow: 0px 0px 1px rgb(46, 44, 44);
+   padding: 10px;
+   margin: auto;
+   border-radius: 10px;
+}
+.usuario-log, .pass-log {
+    padding: 10px;
+    margin: 5px;
+}
+.usuario-log label, .pass-log label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: black;
+}
+.usuario-log input, .pass-log input {
+    border-radius: 5px;
+}
+.enviar {
+    width: 30%;
+    margin-left: 10px;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.enviar a{
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #03264C;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+@media (min-width: 768px){
+    /*estilo header*/
+    .nav-enlaces {
+        display: flex; 
+        font-size: 18px; 
+        margin: 0;
+        justify-content: space-between;
+    }
+    .nav-enlaces a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 0 6px;
+    }
+    ul {
+        font-weight: bold;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    /*Estilo login*/
+    .completar {
+        color: #03264C;
+        text-align: center;
+        text-shadow: 1px 1px 2px #03264C;
+    }
+    .usuario-log, .pass-log {
+        display: flex;
+        flex-direction: column;
+    }
+    .usuario-log label, .pass-log label{
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .usuario-log input, .pass-log input {
+        width: 60%;
+        padding: 10px;
+        margin: auto;
+    }
+    .enviar {
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .enviar a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+@media (min-width: 1024px){
+    /*estilo header*/
+    .banner {
+        display: block;
+        width: 100%;
+    }
+    .combo-search {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo-search {
+        width: 60%;
+    }
+    .search {
+        font-size: 24px;
+    }
+    .search input {
+        font-size: 24px;
+        text-align: center;
+    }
+    .compra {
+        font-size: 24px;
+    }
+    .nav-enlaces {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .nav-enlaces ul li{
+        margin-right: 20px;
+    }
+    .nav-enlaces ul li:hover {
+        text-shadow: 2px 2px 2px white;
+        transition: all 400ms;
+    }
+    .search:hover {
+        box-shadow: 2px 2px 3px #464343;
+        transition: all 425ms;
+    }
+    .menu {
+        display: none;
+    }
+    /*Estilos login*/
+    .completar {
+        font-size: 60px;
+    }
+    .login-complete {
+        height: 400px;
+    }
+    .usuario-log label, .pass-log label{
+        font-size: 30px;
+        color:  #03264C;
+    }
+    .usuario-log input, .pass-log input {
+        border-radius: 30px;
+        border: none;
+        background-color: #ebebeb;
+        padding: 20px;
+    }
+    .usuario-log input:hover, .pass-log input:hover {
+        box-shadow: 1px 1px 2px  #03264C;
+    }
+    .enviar {
+        margin-top: 40px;
+    }
+    .enviar a {
+        font-size: 24px;
+        padding: 15px 35px;
+        border-radius: 30px;
+    }
+    .enviar a:hover {
+        background-color:  #EAC926;
+        transition: all 425ms;
+    }
+}
